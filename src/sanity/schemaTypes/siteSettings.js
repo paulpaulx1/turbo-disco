@@ -45,7 +45,7 @@ export const siteSettings = defineType({
       to: [{ type: "portfolio" }],
       fieldset: "home",
       description:
-        "Pick a portfolio; its paintings appear large, one per screen, in its order. Leave empty to show every painting, newest first.",
+        "The first painting in this portfolio is shown large on the home page. To change it, drag another painting to the top of the portfolio. Leave empty to show the newest painting.",
     }),
     defineField({
       name: "navigation",
