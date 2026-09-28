@@ -509,3 +509,56 @@ ol {
     --caption-room: 72px;
   }
 }
+
+@media (max-width: 760px) {
+  :root {
+    --header-h: 64px;
+  }
+
+  .site-header-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links[data-open] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 8px var(--gutter) 20px;
+    background: var(--wall);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-links[data-open] a {
+    display: block;
+    padding: 12px 0;
+    font-size: 17px;
+  }
+
+  .home-heading {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .home-eyebrow {
+    font-size: 16px;
+  }
+
+  .feature {
+    --caption-room: 72px;
+  }
+}
